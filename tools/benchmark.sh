@@ -26,13 +26,15 @@ if [ -z $TITAN ]; then
 fi
 
 if [ -z $DB_DIR ]; then
-  echo "DB_DIR is not defined"
-  exit 0
+#  echo "DB_DIR is not defined"
+#  exit 0
+  DB_DIR="db"
 fi
 
 if [ -z $WAL_DIR ]; then
-  echo "WAL_DIR is not defined"
-  exit 0
+#  echo "WAL_DIR is not defined"
+#  exit 0
+  WAL_DIR="db"
 fi
 
 output_dir=${OUTPUT_DIR:-/tmp/}
